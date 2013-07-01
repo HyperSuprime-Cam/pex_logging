@@ -186,7 +186,7 @@ void IndentedFormatter::write(std::ostream *strm, const LogRecord& rec) {
     string indent(indentstr.str());
 
     for(vi = comments.begin(); vi != comments.end(); ++vi) {
-        (*strm) << indent << date << log << levstr << *vi << std::endl;
+        (*strm) << date << indent << log << levstr << *vi << std::endl;
     }
 
     if (isVerbose() || rec.willShowAll()) {
