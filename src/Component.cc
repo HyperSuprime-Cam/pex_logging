@@ -32,6 +32,7 @@
   * \author Robert Lupton, Princeton University
   */
 
+#include <iostream>
 #include <map>
 #include <boost/tokenizer.hpp>
 
